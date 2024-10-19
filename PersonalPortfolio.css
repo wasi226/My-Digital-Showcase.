@@ -1,0 +1,260 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(54, 54, 103); /* Change background color */
+    line-height: 1.6;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px 0;
+    color: white; /* Adjust color to ensure readability */
+}
+
+/* Navbar Styles */
+.nav {
+    width: 100%;
+    height: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    background-color: rgb(18, 18, 53);
+}
+
+.left h5 {
+    font-size: 35px;
+    color: white;
+}
+
+.right {
+    display: flex;
+    gap: 20px;
+}
+.right a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+.right a:hover{
+    color: lightseagreen;
+}
+
+/* Welcome Section */
+.welcome {
+    width: 100%;
+    height: 88%;
+    display: flex;
+    background-color: rgb(54, 54, 103); /* Keep consistent background color */
+}
+
+.left1 {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    text-align: start;
+    justify-content: center;
+    padding: 0 50px;
+    flex-direction: column;
+    gap: 20px;
+    font-family: monument;
+}
+span{
+    color: lightseagreen;
+}
+
+.left1 h1 {
+    font-size: 40px;
+    color: white;
+}
+
+.right1 {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right1 img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    position: top;
+    border-radius: 10px;
+}
+
+.left1 button {
+    padding: 10px 40px;
+    background-color: lightseagreen;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+
+/* About Me Section */
+.page3 {
+    background-color: rgb(54, 54, 103); /* Keep consistent background color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.about {
+    text-align: center;
+    color: white;
+}
+
+.about h1 {
+    font-size: 40px;
+}
+
+.about p {
+    font-size: 20px;
+    line-height: 40px;
+}
+
+/* Skills & Experience Section */
+.page2 {
+    background-color: rgb(54, 54, 103); /* Keep consistent background color */
+    padding: 20px;
+}
+
+.head {
+    text-align: center;
+    color: white;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card1 {
+    width: 300px;
+    background-color: rgb(18, 18, 53);
+    border-radius: 20px;
+    margin: 10px;
+    padding: 20px;
+}
+.card1:hover{   
+    background-image: url('https://plus.unsplash.com/premium_photo-1661877737564-3dfd7282efcb?q=80&w=1800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-position: center;
+    background-size: cover;
+    transition: all ease 0.5s;
+}
+
+.card1 h1 {
+    color: white;
+    font-size: 24px;
+}
+
+.card1 p {
+    color: white;
+}
+
+/* Project, Contact & Blog Sections */
+.portfolio, .contact, .blog {
+    padding: 40px 20px;
+    background-color: rgb(54, 54, 103); /* Keep consistent background color */
+    border-radius: 8px;
+    margin: 20px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    background-color: white;
+}
+
+.project-container, .blog-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Cards */
+.project-card, .blog-card {
+    background-color: rgb(18, 18, 53); /* Consistent with theme */
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    transition: transform 0.3s ease;
+    color: white;
+}
+
+.project-card:hover, .blog-card:hover {
+    transform: translateY(-5px);
+}
+
+a {
+    color: lightseagreen;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: white;
+}
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: lightseagreen;
+}
+
+button {
+    background-color: lightseagreen;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#but a{
+    color: white;
+}
+
+button:hover, #but a:hover{
+    background-color: white;
+    color: lightseagreen;
+}
+
+.confirmation {
+    margin-top: 15px;
+    color: green;
+}
+
+.hidden {
+    display: none;
+}
+@media (max-width: 600px) {
+    .project-card, .blog-card {
+        width: 100%;
+    }
+}
